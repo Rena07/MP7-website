@@ -1,0 +1,118 @@
+<doctype! HTML>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PuzzleGames</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/business-casual.css" rel="stylesheet">
+		
+<style>
+table {
+width: 32%;
+height: 40%;
+border-color: transparent;
+}
+table td{ 
+padding: 0px;
+} 
+input{
+font-size: 40px;
+width: 100%;
+padding: 20px;
+margin: 0px;
+border: 0px;
+}
+</style>
+
+</head>
+
+<body>
+<script src="mp4.js"></script>
+<script src="words.js"></script>
+
+<div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">PuzzleGames</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">PuzzleGames</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Welcome</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="numbers.html">Numbers Puzzle</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="puzzle.html">Words Puzzle</a>
+              <span class="sr-only">(current)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="bg-faded p-4 my-4">
+	<div class="text-center mt-4">
+	<h2> Let's Play a Wording Game!</h2>
+	
+	<table align= "center" border = 1>
+	  <tr class = "row">
+		<td class = "space">
+		<input id= "topleft" type="text" size="1" maxlength="1"></input>
+		</td>
+		<td class="space">
+		<input id= "topcenter" type="text" size="1" maxlength="1"></input>
+		</td>
+		<td>
+		<input id= "topright" type="text" size="1" maxlength="1"></input>
+		</td>
+	  </tr>
+	  
+	  <tr class = "row">
+		<td class = "space">
+		<input id= "centerleft" type="text" size="1" maxlength="1"></input>
+		</td>
+		<td class = "space">
+		<input id= "centercenter" type="text" size="1" maxlength="1"></input>
+		</td>
+		<td class = "space">
+		<input id= "centerright" type="text" size="1" maxlength="1"></input>
+		</td>
+	  </tr>
+	  <tr class = "row">
+		<td class = "space" >
+		<input id= "bottomleft" type="text" size="1" maxlength="1"></input>
+		</td>
+		<td class = "space">
+		<input id= "bottomcenter" type="text" size="1" maxlength="1"></input>
+		</td>
+		<td class = "space">
+		<input id= "bottomright" type="text" size="1" maxlength="1"></input>
+		</td>
+	  </tr>
+	</table>
+	<br>
+	<div align = "center">
+	<button onClick="decode()">Solve the Puzzle!</button>
+	</div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+
+
